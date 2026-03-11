@@ -5,6 +5,8 @@
     <source src="https://github.com/proto-solarian/proto-solarian.github.io/raw/refs/heads/main/2025-10-16%2000-56-26.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
+ドクロもブレンダーのスカルプティングツールで自作しました。リトポロジーしていないのでバーテックスは大変多いのに、フレームの描画時間は役1msです。
+![Renderdoc Mesh Viewer - Skull Drawcall](workbench-rdoc02.png)
 
 ## テクノロジー Technologies
 プログラミング言語
