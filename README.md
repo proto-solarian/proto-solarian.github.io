@@ -1,6 +1,8 @@
 # 光エンジン Hikari Engine
 自製レンダリングAPIとゲームエンジン実験プロジェクト。暇な瞬間だけに開発して３か月に作成しました。
+
 A rendering API and game engine research project. This project was buil over the course of 3 months while working a full time job.
+
 <video controls width="800">
     <source src="https://github.com/proto-solarian/proto-solarian.github.io/raw/refs/heads/main/2025-10-16%2000-56-26.mp4" type="video/mp4">
     Your browser does not support the video tag.
