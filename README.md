@@ -1,14 +1,16 @@
 # 光エンジン Hikari Engine
 自製レンダリングAPIとゲームエンジン実験プロジェクト。暇な瞬間だけに開発して３か月に作成しました。
 
-<video controls width="800">
+<video controls width="500">
     <source src="https://github.com/proto-solarian/proto-solarian.github.io/raw/refs/heads/main/2025-10-16%2000-56-26.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
+
 ドクロもブレンダーのスカルプティングツールで自作しました。リトポロジーしていないのでバーテックスは大変多いのに、フレームの描画時間は役1msです。
+
 ![Renderdoc Mesh Viewer - Skull Drawcall](workbench-rdoc02.png)
 
-## テクノロジー Technologies
+## テクノロジー Technology
 プログラミング言語
 - C/C++
 - Slang (HLSL)
@@ -63,6 +65,10 @@ A rendering API and game engine research project.
     <source src="https://github.com/proto-solarian/proto-solarian.github.io/raw/refs/heads/main/2025-10-16%2000-56-26.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
+
+The skull was also built my yours truly with Blender's sculpting tools. It hasn't been retopologized so the vertex count is quite high, yet the renderer has no problem drawing every frame in ~1ms.
+
+![Renderdoc Mesh Viewer - Skull Drawcall](workbench-rdoc02.png)
 
 ## Technologies
 Languages:
