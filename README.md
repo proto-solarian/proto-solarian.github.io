@@ -11,7 +11,6 @@
 ![Renderdoc Mesh Viewer - Skull Drawcall](workbench-rdoc02.png)
 
 ![Render Doc Renderer Anatomy](workbench-rdoc01.png)
-
 上）レンダードックのキャプチャーによるレンダラーの構成。
 
 ## テクノロジー Technology
@@ -75,7 +74,6 @@ The skull was also built my yours truly with Blender's sculpting tools. It hasn'
 ![Renderdoc Mesh Viewer - Skull Drawcall](workbench-rdoc02.png)
 
 ![Render Doc Renderer Anatomy](workbench-rdoc01.png)
-
 Above) The actual renderer's architecture as captured by RenderDoc
 
 ## Technologies
