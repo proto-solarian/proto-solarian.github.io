@@ -10,6 +10,10 @@
 
 ![Renderdoc Mesh Viewer - Skull Drawcall](workbench-rdoc02.png)
 
+![Render Doc Renderer Anatomy](workbench-rdoc01.png)
+
+上）レンダードックのキャプチャーによるレンダラーの構成。
+
 ## テクノロジー Technology
 プログラミング言語
 - C/C++
@@ -69,6 +73,10 @@ A rendering API and game engine research project.
 The skull was also built my yours truly with Blender's sculpting tools. It hasn't been retopologized so the vertex count is quite high, yet the renderer has no problem drawing every frame in ~1ms.
 
 ![Renderdoc Mesh Viewer - Skull Drawcall](workbench-rdoc02.png)
+
+![Render Doc Renderer Anatomy](workbench-rdoc01.png)
+
+Above) The actual renderer's architecture as captured by RenderDoc
 
 ## Technologies
 Languages:
