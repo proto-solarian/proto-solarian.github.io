@@ -1,76 +1,79 @@
 <html>
   <head>
     <title>Aaron Hull - Hikari Engine</title>
+    <link rel="stylesheet" href="assets/css/style.scss" />
   </head>
   <body>
-    <h1>Hikari Engine</h1>
-    <p>A rendering API and game engine research project.</p>
-    <video controls width="800">
-        <source src="https://github.com/proto-solarian/proto-solarian.github.io/raw/refs/heads/main/2025-10-16%2000-56-26.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <p>The skull was also built my yours truly with Blender's sculpting tools. It hasn't been retopologized so the vertex count is quite high, yet the renderer has no problem drawing every frame in ~1ms.</p>    
-    <img title="Renderdoc Mesh Viewer - Skull Drawcall" src=workbench-rdoc02.jpg" />
-    <img title="Render Doc Renderer Anatomy" src="workbench-rdoc01.png" />
-    <p>Above) The actual renderer's architecture as captured by RenderDoc.</p>
-    <h2>Technologies</h2>
-    <p>Languages:</p>
-    <ul>
-      <li>C/C++</li>
-      <li>Slang (HLSL)</li>
-    </ul>
-    <p>Utilities:</p>
-    <ul>
-      <li>Vulkan 1.3</li>
-      <li>GLM</li>
-      <li>No other APIs, Libraries, or Frameworks were used</li>
-    </ul>
-    <h2>Engine Features</h2>
-    <ul>
-      <li>Wavefront .OBJ file importer</li>
-      <li>3-Part Architecture:
-        <ul>
-          <li>Engine Core</li>
-          <li>App(Editor base)</li>
-          <li>Shared library</li>
-        </ul>
-      </li>
-      <li>Scene object hierarchy/composable transform tree</li>
-      <li>Customizable object behaviors</li>
-      <li>Entity-Component System (ECS) consideration for memory locality (i.e.: customized behaviors exist in contiguous memory and their Updates are called sequentially)</li>
-      <li>Built with Windows and Android in mind, but currently only supports Windows</li>
-    </ul>
-    <h2>Renderer Features</h2>
-    <ul>
-      <li>A completely bespoke vulkan-based renderer called Prometheus</li>
-      <li>Simple, diffuse shading</li>
-      <li>App-side Lighting</li>
-      <li>Highly performant frame updates</li>
-    </ul>
-    <h2>Upcoming Engine Features (Short-term)</h2>
-    <ul>
-      <li>Image importing (AVIF or Webp possible, but TIFF to support artist workflows)</li>
-      <li>More mesh importing (FBX likely, GLTF/GLB ideal)</li>
-      <li>Android support</li>
-      <li>Input handling</li>
-    </ul>
-    <h2>Upcoming Renderer Features　（Short-term</h2>
-    <ul>
-      <li>Texturing</li>
-      <li>PBR Shading</li>
-      <li>Skyboxes</li>
-      <li>Transparent object drawing</li>
-      <li>Global illumination</li>
-      <li>Shadow mapping</li>
-    </ul>
-    <h2>Upcoming Engine Features (Long-term)</h2>
-    <ul>
-      <li>Virtual Reality/Spatial Rendering Support</li>
-      <li>Scene editor interface</li>
-    </ul>
-    <h2>Upcoming Renderer Features (Long-term)</h2>
-    <ul>
-      <li>未決定（現代的・次世代のレンダリング機能の実装する方法を複数実験する予定</li>
-    </ul>
+    <div id="body">
+      <h1>Hikari Engine</h1>
+      <p>A rendering API and game engine research project.</p>
+      <video controls width="800">
+          <source src="https://github.com/proto-solarian/proto-solarian.github.io/raw/refs/heads/main/2025-10-16%2000-56-26.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+      <p>The skull was also built my yours truly with Blender's sculpting tools. It hasn't been retopologized so the vertex count is quite high, yet the renderer has no problem drawing every frame in ~1ms.</p>    
+      <img title="Renderdoc Mesh Viewer - Skull Drawcall" src=workbench-rdoc02.jpg" />
+      <img title="Render Doc Renderer Anatomy" src="workbench-rdoc01.png" />
+      <p>Above) The actual renderer's architecture as captured by RenderDoc.</p>
+      <h2>Technologies</h2>
+      <p>Languages:</p>
+      <ul>
+        <li>C/C++</li>
+        <li>Slang (HLSL)</li>
+      </ul>
+      <p>Utilities:</p>
+      <ul>
+        <li>Vulkan 1.3</li>
+        <li>GLM</li>
+        <li>No other APIs, Libraries, or Frameworks were used</li>
+      </ul>
+      <h2>Engine Features</h2>
+      <ul>
+        <li>Wavefront .OBJ file importer</li>
+        <li>3-Part Architecture:
+          <ul>
+            <li>Engine Core</li>
+            <li>App(Editor base)</li>
+            <li>Shared library</li>
+          </ul>
+        </li>
+        <li>Scene object hierarchy/composable transform tree</li>
+        <li>Customizable object behaviors</li>
+        <li>Entity-Component System (ECS) consideration for memory locality (i.e.: customized behaviors exist in contiguous memory and their Updates are called sequentially)</li>
+        <li>Built with Windows and Android in mind, but currently only supports Windows</li>
+      </ul>
+      <h2>Renderer Features</h2>
+      <ul>
+        <li>A completely bespoke vulkan-based renderer called Prometheus</li>
+        <li>Simple, diffuse shading</li>
+        <li>App-side Lighting</li>
+        <li>Highly performant frame updates</li>
+      </ul>
+      <h2>Upcoming Engine Features (Short-term)</h2>
+      <ul>
+        <li>Image importing (AVIF or Webp possible, but TIFF to support artist workflows)</li>
+        <li>More mesh importing (FBX likely, GLTF/GLB ideal)</li>
+        <li>Android support</li>
+        <li>Input handling</li>
+      </ul>
+      <h2>Upcoming Renderer Features　（Short-term</h2>
+      <ul>
+        <li>Texturing</li>
+        <li>PBR Shading</li>
+        <li>Skyboxes</li>
+        <li>Transparent object drawing</li>
+        <li>Global illumination</li>
+        <li>Shadow mapping</li>
+      </ul>
+      <h2>Upcoming Engine Features (Long-term)</h2>
+      <ul>
+        <li>Virtual Reality/Spatial Rendering Support</li>
+        <li>Scene editor interface</li>
+      </ul>
+      <h2>Upcoming Renderer Features (Long-term)</h2>
+      <ul>
+        <li>未決定（現代的・次世代のレンダリング機能の実装する方法を複数実験する予定</li>
+      </ul>
+    </div><!-- id=body -->
   </body>
 </html>
