@@ -1,4 +1,5 @@
 # 光エンジン Hikari Engine
+English below.
 自製レンダリングAPIとゲームエンジン実験プロジェクト。暇な瞬間だけに開発して３か月に作成しました。
 
 <video controls width="500">
