@@ -10,3 +10,7 @@ video, iframe {
 
 /* Avoid horizontal scroll caused by oversized media */
 body { overflow-x: hidden; }
+#body {
+   width: 1260px;
+   margin: 0 auto;
+}
