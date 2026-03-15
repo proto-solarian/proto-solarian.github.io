@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aaron Hull - Hikari Engine</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="menu">
+        <h1>Aaron Hull</h1>
+        <p>Showcase of personal works.</p>
+      </div>
+      <div id="body">
+        <h1>光エンジン Hikari Engine</h1>
+        <p>自製レンダリングAPIとゲームエンジン実験プロジェクト。暇な瞬間だけに開発して３か月に作成しました。</p>
+
+        <video controls>
+            <source src="https://github.com/proto-solarian/proto-solarian.github.io/raw/refs/heads/main/2025-10-16%2000-56-26.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>ドクロもブレンダーのスカルプティングツールで自作しました。リトポロジーしていないのでバーテックスは大変多いのに、フレームの描画時間は役1msです。</p>
+        <img src="workbench-rdoc02.png" title="Renderdoc Mesh Viewer - Skull Drawcall" />
+        <img src="workbench-rdoc01.png" title="Render Doc Renderer Anatomy" />
+        <p>上）レンダードックのキャプチャーによるレンダラーの構成。</p>
+        <h2>テクノロジー Technology</h2>
+        <p>プログラミング言語</p>
+        <ul>
+          <li>C/C++</li>
+          <li>Slang (HLSL)</li>
+        </ul>
+        <p>利用ユーティリティライブラリー等</p>
+        <ul>
+          <li>Vulkan 1.3</li>
+          <li>GLM</li>
+          <li>他に利用されておりません</li>
+        </ul>
+        <h2>エンジン機能 Engine Features</h2>
+        <ul>
+          <li>Wavefront .OBJファイルインポーター</li>
+          <li>三部構成
+            <ul>
+              <li>エンジンコア</li>
+              <li>アプリ（エディターの基盤）</li>
+              <li>共有ライブラリー</li>
+            </ul>
+          </li>
+          <li>構築可能なシーンオブジェクトヒエラルキー/トランスフォームツリー</li>
+          <li>オブジェクトの行動をアプリ側でプログラム出来る</li>
+          <li>エンティティコンポーネントシステム（ECS）の形にメモリ領域を定義している（例えば、アプリ側で作成された行動オブジェクトは連続メモリに書き込み、アップデート関数はフレーム毎に連続に呼び出しています）</li>
+          <li>WindowsとAndroidに対応するように構築しています（現在Windowsのみに対応しています）</li>
+        </ul>
+        <h2>レンダラー機能 Renderer Features</h2>
+        <ul>
+          <li>プロメテウスという完全自製のVulkanレンダラー</li>
+          <li>単純な拡散反射シェーディング</li>
+          <li>アプリ側で構築できるライティング</li>
+          <li>最適化しているフレームアップデート構成</li>
+        </ul>
+        <h2>次に実装する予定のエンジン機能 Upcoming Engine Features (Short-term)</h2>
+        <ul>
+          <li>イメージインポート（AVIFかwebpを調査する予定だが、DCCワークフローをサポートする為にTIFFにする可能性が高い）</li>
+          <li>他の3Dモデルファイル形式をサポートする（FBX実装する可能性が高いが、理想的にGLTF/GLBをサポートしたい）</li>
+          <li>アンドロイド対応</li>
+          <li>ユーザーインプット読み込み</li>
+        </ul>
+        <h2>次に実装する予定のレンダラー機能 Upcoming Renderer Features　（Short-term）</h2>
+        <ul>
+          <li>テキスチャー利用するシェーディング</li>
+          <li>PBRシェーディング</li>
+          <li>スカイボックス</li>
+          <li>透明なオブジェクトの描画</li>
+          <li>グローバルイルミネーション</li>
+          <li>シャドーマップ</li>
+        </ul>
+        <h2>後で実装する予定のエンジン機能 Upcoming Engine Features (Long-term)</h2>
+        <ul>
+          <li>仮想現実/空間レンダリングサポート</li>
+          <li>シーンエディターインターフェース</li>
+        </ul>
+        <h2>後で実装する予定のレンダラー機能 Upcoming Renderer Features (Long-term)</h2>
+        <ul>
+          <li>未決定（現代的・次世代のレンダリング機能の実装する方法を複数実験する予定）</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
