@@ -36,9 +36,12 @@ video, iframe {
    width: 315px;
    float: left;
    position: fixed;
+   border: 2px;
+   margin: 12px;
 }
 #body {
    width: 945px;
    float: right;
+   border: 2px;
    margin: 0 auto;
 }
